@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:gravity="top" android:background="@drawable/background">
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" android:layout_gravity="top" android:layout_marginBottom="50dp">
+        <FrameLayout
+            android:layout_width="297dp"
+            android:layout_height="277dp" android:layout_gravity="center">
+            <ImageView
+                android:layout_width="136dp"
+                android:layout_height="135dp"
+                android:id="@+id/dice1" android:layout_gravity="left|center_vertical"
+                android:background="@drawable/empty"/>
+            <ImageView android:layout_width="136dp" android:layout_height="135dp" android:id="@+id/dice2"
+                android:layout_gravity="right|center_vertical" android:background="@drawable/empty"/>
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="141dp"
+            android:layout_height="wrap_content" android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginTop="-1dp" android:layout_marginBottom="45dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/total"
+                android:id="@+id/textView" android:layout_gravity="left|top" android:autoText="false"
+                android:textSize="@dimen/MediumTextSize" android:textColor="#0000ff"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:id="@+id/tbTotal" android:layout_gravity="right|top" android:textStyle="bold"
+                android:textSize="@dimen/MediumTextSize" android:textColor="#0000ff"/>
+        </FrameLayout>
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp" android:clickable="true"
+        android:focusable="false" android:layout_gravity="bottom" android:id="@id/rollDice">
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:layout_gravity="center" android:background="#FF6A00"
+            android:alpha="0.6">
+        </FrameLayout>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/roll_dice"
+            android:id="@+id/textView3" android:layout_gravity="center"
+            android:textSize="@dimen/MediumTextSize" android:textColor="@android:color/black"
+            />
+    </FrameLayout>
+</FrameLayout>
